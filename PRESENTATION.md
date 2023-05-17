@@ -1,1 +1,3 @@
-# This document is required.
+# Four-Square Cipher Presentation Plan
+
+The plan is to explain how the Cipher works. We can compare the cipher to other ciphers we have done such as the Playfaire Cipher. We will demonstrate encoding a message with a key and decoding that message with the key. We can try to bruteforce a decoded message without a key. For this, maybe encode Alice.txt and attempt to get the decoded version of Alice.txt as well as the key that was used to encode it.

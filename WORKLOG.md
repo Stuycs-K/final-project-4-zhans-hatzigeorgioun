@@ -13,9 +13,9 @@ info
 
 ## Sean
 
-### date x
+### May 17, 2023
 
-info
+Worked on setting up the repo, outlining presentation and homework plans. Next step is to research the cipher
 
 ### date y
 
