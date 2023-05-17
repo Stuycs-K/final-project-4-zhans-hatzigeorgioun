@@ -2,9 +2,9 @@
 
 ## Nicko
 
-### date x
+### date 5/17
 
-info
+Wrote out description and did some research about the cipher. Will start the actual code tomorrow
 
 ### date y
 
@@ -20,3 +20,11 @@ Worked on setting up the repo, outlining presentation and homework plans. Next s
 ### date y
 
 info
+
+## References and Resources
+
+https://www.dcode.fr/four-squares-cipher
+used for testing to ensure our code works as intended
+
+https://en.wikipedia.org/wiki/Four-square_cipher
+used to understand the cipher works
