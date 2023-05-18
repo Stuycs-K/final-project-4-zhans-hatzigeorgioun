@@ -6,9 +6,9 @@
 
 Wrote out description and did some research about the cipher. Will start the actual code tomorrow
 
-### date y
+### date 5/18
 
-info
+watched video on the visualization of the cipher
 
 
 ## Sean
@@ -28,3 +28,6 @@ used for testing to ensure our code works as intended
 
 https://en.wikipedia.org/wiki/Four-square_cipher
 used to understand the cipher works
+
+https://www.youtube.com/watch?v=0cPLBdBySws
+visualized cipher, further clarifications
