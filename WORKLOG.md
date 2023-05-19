@@ -10,6 +10,9 @@ Wrote out description and did some research about the cipher. Will start the act
 
 watched video on the visualization of the cipher
 
+### date 5/19
+
+did the splitting for the encrypt method
 
 ## Sean
 
