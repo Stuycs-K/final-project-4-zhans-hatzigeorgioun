@@ -21,6 +21,10 @@ Worked on setting up the repo, outlining presentation and homework plans. Next s
 
 Did some research on the cipher
 
+### May 19, 2023
+
+Continue research, looked into case where messages contain an odd number of characters since the cipher pairs up characters before encrypting
+
 ## References and Resources
 
 https://www.dcode.fr/four-squares-cipher
@@ -34,3 +38,6 @@ visualized cipher, further clarifications
 
 http://practicalcryptography.com/ciphers/classical-era/four-square/
 great descripion of cipher
+
+https://people.eecs.berkeley.edu/~bh/pdf/v1ch12.pdf
+explains the case where a message has an odd number of characters (add a random character at the end)
