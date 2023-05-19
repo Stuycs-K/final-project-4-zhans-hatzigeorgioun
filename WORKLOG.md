@@ -17,9 +17,9 @@ watched video on the visualization of the cipher
 
 Worked on setting up the repo, outlining presentation and homework plans. Next step is to research the cipher
 
-### date y
+### May 18, 2023
 
-info
+Did some research on the cipher
 
 ## References and Resources
 
@@ -31,3 +31,6 @@ used to understand the cipher works
 
 https://www.youtube.com/watch?v=0cPLBdBySws
 visualized cipher, further clarifications
+
+http://practicalcryptography.com/ciphers/classical-era/four-square/
+great descripion of cipher
