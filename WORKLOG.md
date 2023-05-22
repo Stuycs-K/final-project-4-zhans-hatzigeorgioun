@@ -28,6 +28,11 @@ Did some research on the cipher
 
 Continue research, looked into case where messages contain an odd number of characters since the cipher pairs up characters before encrypting
 
+### May 22, 2023
+
+Wrote generate key function, added in user input for key, and displayed output of key for demonstration purposes
+
+
 ## References and Resources
 
 https://www.dcode.fr/four-squares-cipher

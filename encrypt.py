@@ -41,9 +41,9 @@ generate_key_square(key2)
 print(generate_key_square(key1))
 print(generate_key_square(key2))
 
-table = ['A', 'B', 'C', 'D', 'E', 
-         'F', 'G', 'H', 'I', 'J', 
-         'K', 'L', 'M', 'N', 'O', 
-         'P', 'R', 'S', 'T', 'U', 
-         'V', 'W', 'X', 'Y', 'Z']
+default_key_square = ['A', 'B', 'C', 'D', 'E', 
+					  'F', 'G', 'H', 'I', 'J', 
+					  'K', 'L', 'M', 'N', 'O', 
+					  'P', 'R', 'S', 'T', 'U', 
+  					  'V', 'W', 'X', 'Y', 'Z']
          
