@@ -1,5 +1,7 @@
 import sys
-msg = input("Enter Msg: ")
+msg = input("Enter the message you want to encrypt: ")
+key1 = input("Enter your first encryption key: ")
+key2 = input("Enter your second encryption key: ")
 tbEncrypt = msg.replace(" ", "")
 if(len(tbEncrypt)%2 != 0):
 	tbEncrypt += "Q"
@@ -32,7 +34,13 @@ def generate_key_square(key):
                 row += 1
 
     return key_square
-    
+
+generate_key_square(key1)
+generate_key_square(key2)
+#print out the key to show whats happening
+print(generate_key_square(key1))
+print(generate_key_square(key2))
+
 table = ['A', 'B', 'C', 'D', 'E', 
          'F', 'G', 'H', 'I', 'J', 
          'K', 'L', 'M', 'N', 'O', 
