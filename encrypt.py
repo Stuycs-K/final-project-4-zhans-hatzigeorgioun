@@ -1,5 +1,5 @@
 import sys
-msg = "ATTACK AT DAWN"
+msg = input("Enter Msg: ")
 tbEncrypt = msg.replace(" ", "")
 if(len(tbEncrypt)%2 != 0):
 	tbEncrypt += "Q"
@@ -32,3 +32,10 @@ def generate_key_square(key):
                 row += 1
 
     return key_square
+    
+table = ['A', 'B', 'C', 'D', 'E', 
+         'F', 'G', 'H', 'I', 'J', 
+         'K', 'L', 'M', 'N', 'O', 
+         'P', 'R', 'S', 'T', 'U', 
+         'V', 'W', 'X', 'Y', 'Z']
+         
