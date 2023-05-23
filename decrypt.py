@@ -1,9 +1,9 @@
 import sys
-msg = input("Enter the message you want to encrypt: ")
+msg = input("Enter the cipher text you want to decrypt: ")
 key1 = input("Enter your first encryption key: ")
 key2 = input("Enter your second encryption key: ")
 def splitter (msg):
-    tbEncrypt = msg.replace(" ", "")
+    tbEncrypt = msg.replace(" ", "").upper()
     if(len(tbEncrypt)%2 != 0):
     	tbEncrypt += "Q"
     splitted = ([(tbEncrypt[i:i+2]) for i in range(0, len(tbEncrypt), 2)])
@@ -38,11 +38,14 @@ def generate_key_square(key):
 
     return key_square
 
-generate_key_square(key1)
-generate_key_square(key2)
+encryptedT1 = generate_key_square(key1)
+encryptedT2 = generate_key_square(key2)
+print(encryptedT1[0][3])
+print(encryptedT2[3][0])
+
 #print out the key to show whats happening
-print(generate_key_square(key1))
-print(generate_key_square(key2))
+print(encryptedT1)
+print(encryptedT2)
 
 table = ['A', 'B', 'C', 'D', 'E',
          'F', 'G', 'H', 'I', 'J',
