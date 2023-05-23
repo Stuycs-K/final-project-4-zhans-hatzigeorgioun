@@ -2,11 +2,14 @@ import sys
 msg = input("Enter the message you want to encrypt: ")
 key1 = input("Enter your first encryption key: ")
 key2 = input("Enter your second encryption key: ")
-tbEncrypt = msg.replace(" ", "")
-if(len(tbEncrypt)%2 != 0):
-	tbEncrypt += "Q"
-splitted = ([(tbEncrypt[i:i+2]) for i in range(0, len(tbEncrypt), 2)])
-print(splitted)
+def splitter (msg):
+    tbEncrypt = msg.replace(" ", "").upper()
+    if(len(tbEncrypt)%2 != 0):
+    	tbEncrypt += "Q"
+    splitted = ([(tbEncrypt[i:i+2]) for i in range(0, len(tbEncrypt), 2)])
+    return splitted
+
+print(splitter(msg))
 
 def generate_key_square(key):
     alphabet = "ABCDEFGHIKLMNOPQRSTUVWXYZ"
