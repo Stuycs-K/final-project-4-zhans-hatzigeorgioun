@@ -14,6 +14,14 @@ watched video on the visualization of the cipher
 
 did the splitting for the encrypt method
 
+### date 5/22
+
+tables are ready to be used
+
+### date 5/23
+
+able to pull out specific values from key tables, and use their location to start decrypting
+
 ## Sean
 
 ### May 17, 2023
