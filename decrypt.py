@@ -1,18 +1,30 @@
 import sys
-msg = input("Enter the cipher text you want to decrypt: ")
-key1 = input("Enter your first encryption key: ")
-key2 = input("Enter your second encryption key: ")
+#msg = input("Enter the cipher text you want to decrypt: ")
+#key1 = input("Enter your first encryption key: ")
+#key2 = input("Enter your second encryption key: ")
+
+msg = "TIYBFHTIZBSY"
+key1 = "zgptfoihmuwdrcnykeqaxvsbl"
+key2 = "mfnbdcrhsaxyogvituewlqzkp"
+
+table = [['A', 'B', 'C', 'D', 'E'],
+         ['F', 'G', 'H', 'I', 'K'],
+         ['L', 'M', 'N', 'O', 'P'],
+         ['Q', 'R', 'S', 'T', 'U'],
+         ['V', 'W', 'X', 'Y', 'Z']]
+print(table)
+
 def splitter (msg):
     tbEncrypt = msg.replace(" ", "").upper()
     if(len(tbEncrypt)%2 != 0):
     	tbEncrypt += "Q"
     splitted = ([(tbEncrypt[i:i+2]) for i in range(0, len(tbEncrypt), 2)])
     return splitted
-
-print(splitter(msg))
+dec = splitter(msg)
+print(dec)
 
 def generate_key_square(key):
-    alphabet = "ABCDEFGHIKLMNOPQRSTUVWXYZ"
+    alphabet = "ABCDEFGHIJKLMNOPRSTUVWXYZ"
     key = key.upper().replace("J", "I")
     key_square = [[None] * 5 for _ in range(5)]
 
@@ -40,15 +52,30 @@ def generate_key_square(key):
 
 encryptedT1 = generate_key_square(key1)
 encryptedT2 = generate_key_square(key2)
-print(encryptedT1[0][3])
-print(encryptedT2[3][0])
+
+key1 = key1.upper()
+key2 = key2.upper()
+answerXi = 0
+answerXj = 0
+answerYi = 0
+answerYj = 0
+for p in range(len(dec)):
+    char1 = dec[p][0]
+    char2 = dec[p][1]
+    print(char1 + " " + char2)
+    for i in range(len(encryptedT1)):
+        for j in range(len(encryptedT1[i])):
+            if(encryptedT1[i][j] == char1):
+                answerXi = i
+                answerXj = j
+    for i in range(len(encryptedT2)):
+        for j in range(len(encryptedT2[i])):
+            if(encryptedT2[i][j] == char2):
+                answerYi = i
+                answerYj = j
+    print(table[answerXi][answerYj])
+    print(table[answerYj][answerXi])
 
 #print out the key to show whats happening
-print(encryptedT1)
-print(encryptedT2)
-
-table = ['A', 'B', 'C', 'D', 'E',
-         'F', 'G', 'H', 'I', 'J',
-         'K', 'L', 'M', 'N', 'O',
-         'P', 'R', 'S', 'T', 'U',
-         'V', 'W', 'X', 'Y', 'Z']
+#print(encryptedT1)
+#print(encryptedT2)
