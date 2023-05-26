@@ -40,9 +40,11 @@ Continue research, looked into case where messages contain an odd number of char
 
 Wrote generate key function, added in user input for key, and displayed output of key for demonstration purposes
 
-### May 24, 202
+### May 24, 2023
 Added find_position function and encrypt function, redid splitting so that spaces were accounted for in alphabet under key function, and added printing of encrypted output. Needs to be tested to make sure it works correctly.
 
+### May 25, 2023
+Found the bug with encrypt and why it wasn't working. Only taking in two key squares instead of four
 
 ## References and Resources
 

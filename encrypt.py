@@ -3,6 +3,14 @@ message = input("Enter the message you want to encrypt: ")
 key1 = input("Enter your first encryption key: ")
 key2 = input("Enter your second encryption key: ")
 
+default_key_square = [
+    ['A','B','C','D','E'],
+    ['F','G','H','I','K'],
+    ['L','M','N','O','P'],
+    ['Q','R','S','T','U'],
+    ['V','W','X','Y','Z'],
+]
+
 def generate_key_square(key):
     alphabet = "ABCDEFGHIKLMNOPQRSTUVWXYZ "
     key = key.upper().replace("J", "I")
@@ -71,4 +79,4 @@ print(key_square1)
 print(key_square2)
 
 encrypted = four_square_encrypt(message, key_square1, key_square2)
-print(encrypted)
+print("Encryped message:",encrypted)
