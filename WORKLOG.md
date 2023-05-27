@@ -46,6 +46,9 @@ Added find_position function and encrypt function, redid splitting so that space
 ### May 25, 2023
 Found the bug with encrypt and why it wasn't working. Only taking in two key squares instead of four
 
+### May 26, 2023
+Encryption better demo print, logic is still in progress, some parts of logic have been implemented
+
 ## References and Resources
 
 https://www.dcode.fr/four-squares-cipher
