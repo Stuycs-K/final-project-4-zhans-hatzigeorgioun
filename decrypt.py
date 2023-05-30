@@ -6,13 +6,11 @@ import sys
 msg = "TIYBFHTIZBSY"
 key1 = "zgptfoihmuwdrcnykeqaxvsbl"
 key2 = "mfnbdcrhsaxyogvituewlqzkp"
-
 table = [['A', 'B', 'C', 'D', 'E'],
          ['F', 'G', 'H', 'I', 'K'],
          ['L', 'M', 'N', 'O', 'P'],
          ['Q', 'R', 'S', 'T', 'U'],
          ['V', 'W', 'X', 'Y', 'Z']]
-print(table)
 
 def splitter (msg):
     tbEncrypt = msg.replace(" ", "").upper()
@@ -21,7 +19,6 @@ def splitter (msg):
     splitted = ([(tbEncrypt[i:i+2]) for i in range(0, len(tbEncrypt), 2)])
     return splitted
 dec = splitter(msg)
-print(dec)
 
 def generate_key_square(key):
     alphabet = "ABCDEFGHIJKLMNOPRSTUVWXYZ"
@@ -59,10 +56,10 @@ answerXi = 0
 answerXj = 0
 answerYi = 0
 answerYj = 0
+final = ""
 for p in range(len(dec)):
     char1 = dec[p][0]
     char2 = dec[p][1]
-    print(char1 + " " + char2)
     for i in range(len(encryptedT1)):
         for j in range(len(encryptedT1[i])):
             if(encryptedT1[i][j] == char1):
@@ -73,8 +70,15 @@ for p in range(len(dec)):
             if(encryptedT2[i][j] == char2):
                 answerYi = i
                 answerYj = j
-    print(table[answerXi][answerYj])
-    print(table[answerYj][answerXi])
+    #print(str(answerYi) + " " + str(answerYj))
+
+    #print(table[0][2])
+    #print(table[1][4])
+    #print(table[answerXi][answerYj])
+    #print(table[answerXj][answerYi])
+    final += table[answerXi][answerYj]
+    final += table[answerYi][answerXj]
+print(final)
 
 #print out the key to show whats happening
 #print(encryptedT1)
