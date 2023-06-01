@@ -49,6 +49,9 @@ Found the bug with encrypt and why it wasn't working. Only taking in two key squ
 ### May 26, 2023
 Encryption better demo print, logic is still in progress, some parts of logic have been implemented
 
+### June 1, 2023
+Fixed encrypt code, tested it. Encrypt code works!
+
 ## References and Resources
 
 https://www.dcode.fr/four-squares-cipher
