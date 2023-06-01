@@ -1,11 +1,45 @@
 import sys
+import string
 
-message = input("Enter the message you want to encrypt: ")
-key1 = input("Enter your first encryption key: ")
-key2 = input("Enter your second encryption key: ")
+def read_text_file(file_path):
+    with open(file_path, 'r') as file:
+        content = file.read()
+    content = content.strip()
+    content = content.translate(str.maketrans('', '', string.punctuation))
+    return content
+
+message_input = input("Enter the message you want to encrypt (1 for keyboard input, 2 for file input): ")
+if message_input == '1':
+    message = input("Enter your message: ")
+elif message_input == '2':
+    message_file = input("Enter the path to the message text file: ")
+    message = read_text_file(message_file)
+else:
+    print("Invalid input")
+    sys.exit(1)
+
+key1_input = input("Enter your first encryption key (1 for keyboard input, 2 for file input): ")
+if key1_input == '1':
+    key1 = input("Enter your first encryption key: ")
+elif key1_input == '2':
+    key1_file = input("Enter the path to the first encryption key text file: ")
+    key1 = read_text_file(key1_file)
+else:
+    print("Invalid input")
+    sys.exit(1)
+
+key2_input = input("Enter your second encryption key (1 for keyboard input, 2 for file input): ")
+if key2_input == '1':
+    key2 = input("Enter your second encryption key: ")
+elif key2_input == '2':
+    key2_file = input("Enter the path to the second encryption key text file: ")
+    key2 = read_text_file(key2_file)
+else:
+    print("Invalid input")
+    sys.exit(1)
 
 def generate_key_square(key):
-    alphabet = "ABCDEFGHIKLMNOPQRSTUVWXYZ "
+    alphabet = "ABCDEFGHIKLMNOPQRSTUVWXYZ"
     key = key.upper().replace("J", "I")
     key_square = [[None] * 5 for _ in range(5)]
 
@@ -38,7 +72,6 @@ def generate_key_square(key):
 default_key_square = generate_key_square("")
 key_square1 = generate_key_square(key1)
 key_square2 = generate_key_square(key2)
-
 upper_left = default_key_square
 upper_right = key_square1
 lower_left = key_square2
@@ -47,9 +80,10 @@ lower_right = default_key_square
 def encrypt(message):
     message = message.upper().replace("J", "I")
     message = message.replace(" ", "")
+    message = message.translate(str.maketrans('', '', string.punctuation))
     if len(message) % 2 == 1:
         message += "Q"
-    
+
     cipher_text = ""
     for i in range(0, len(message), 2):
         char1 = message[i]
@@ -63,13 +97,14 @@ def encrypt(message):
 
     return cipher_text
 
+
 def find_position(square, char):
     for i in range(len(square)):
         for j in range(len(square[i])):
             if square[i][j] == char:
                 return i, j
 
-#Print for demo purposes
+
 print("Upper Left Key")
 for row in upper_left:
     print(row)
