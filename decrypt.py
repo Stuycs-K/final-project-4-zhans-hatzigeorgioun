@@ -4,9 +4,10 @@ import string
 #key1 = input("Enter your first encryption key: ")
 #key2 = input("Enter your second encryption key: ")
 
-msg = "TIYBFHTIZBSY"
-key1 = "zgptfoihmuwdrcnykeqaxvsbl"
-key2 = "mfnbdcrhsaxyogvituewlqzkp"
+msg = ""
+key1 = ""
+key2 = ""
+
 table = [['A', 'B', 'C', 'D', 'E'],
          ['F', 'G', 'H', 'I', 'K'],
          ['L', 'M', 'N', 'O', 'P'],
@@ -22,10 +23,10 @@ def read_text_file(file_path):
 
 message_input = input("Enter the message you want to decrypt (1 for keyboard input, 2 for file input): ")
 if message_input == '1':
-    message = input("Enter your message: ")
+    msg = input("Enter your message: ")
 elif message_input == '2':
     message_file = input("Enter the path to the message text file: ")
-    message = read_text_file(message_file)
+    msg = read_text_file(message_file)
 else:
     print("Invalid input")
     sys.exit(1)
@@ -50,6 +51,9 @@ else:
     print("Invalid input")
     sys.exit(1)
 
+print(msg)
+print(key1)
+print(key2)
 
 
 
@@ -62,7 +66,7 @@ def splitter (msg):
 dec = splitter(msg)
 
 def generate_key_square(key):
-    alphabet = "ABCDEFGHIJKLMNOPRSTUVWXYZ"
+    alphabet = "ABCDEFGHIKLMNOPQRSTUVWXYZ"
     key = key.upper().replace("J", "I")
     key_square = [[None] * 5 for _ in range(5)]
 
@@ -76,6 +80,8 @@ def generate_key_square(key):
             if col == 5:
                 col = 0
                 row += 1
+                if row == 5:
+                    break
 
     for letter in alphabet:
         if letter != "J" and letter not in used_letters:
@@ -85,6 +91,8 @@ def generate_key_square(key):
             if col == 5:
                 col = 0
                 row += 1
+                if row == 5:
+                    break
 
     return key_square
 
