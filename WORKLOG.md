@@ -22,6 +22,26 @@ tables are ready to be used
 
 able to pull out specific values from key tables, and use their location to start decrypting
 
+### date 24, 2023
+
+weird stuff going on with algorithm, making a tester
+
+### date 25, 2023
+
+tester made and error found, will fix tomorrow though
+
+### date 26, 2023
+
+error fixed, decrypt done
+
+### date 5/30
+
+started tryhackme room and started thinking about what to put in read me
+
+### date 6/1
+
+finished tryhackme room and implemented a readme that explains everything about the project
+
 ## Sean
 
 ### May 17, 2023
