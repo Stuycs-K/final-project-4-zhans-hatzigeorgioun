@@ -1,4 +1,5 @@
 import sys
+import string
 #msg = input("Enter the cipher text you want to decrypt: ")
 #key1 = input("Enter your first encryption key: ")
 #key2 = input("Enter your second encryption key: ")
@@ -11,6 +12,46 @@ table = [['A', 'B', 'C', 'D', 'E'],
          ['L', 'M', 'N', 'O', 'P'],
          ['Q', 'R', 'S', 'T', 'U'],
          ['V', 'W', 'X', 'Y', 'Z']]
+
+def read_text_file(file_path):
+    with open(file_path, 'r') as file:
+        content = file.read()
+    content = content.strip()
+    content = content.translate(str.maketrans('', '', string.punctuation))
+    return content
+
+message_input = input("Enter the message you want to decrypt (1 for keyboard input, 2 for file input): ")
+if message_input == '1':
+    message = input("Enter your message: ")
+elif message_input == '2':
+    message_file = input("Enter the path to the message text file: ")
+    message = read_text_file(message_file)
+else:
+    print("Invalid input")
+    sys.exit(1)
+
+key1_input = input("Enter your first decryption key (1 for keyboard input, 2 for file input): ")
+if key1_input == '1':
+    key1 = input("Enter your first encryption key: ")
+elif key1_input == '2':
+    key1_file = input("Enter the path to the first encryption key text file: ")
+    key1 = read_text_file(key1_file)
+else:
+    print("Invalid input")
+    sys.exit(1)
+
+key2_input = input("Enter your second decryption key (1 for keyboard input, 2 for file input): ")
+if key2_input == '1':
+    key2 = input("Enter your second encryption key: ")
+elif key2_input == '2':
+    key2_file = input("Enter the path to the second encryption key text file: ")
+    key2 = read_text_file(key2_file)
+else:
+    print("Invalid input")
+    sys.exit(1)
+
+
+
 
 def splitter (msg):
     tbEncrypt = msg.replace(" ", "").upper()
@@ -78,7 +119,7 @@ for p in range(len(dec)):
     #print(table[answerXj][answerYi])
     final += table[answerXi][answerYj]
     final += table[answerYi][answerXj]
-print(final)
+print("Your Decrypted message: " + final)
 
 #print out the key to show whats happening
 #print(encryptedT1)
