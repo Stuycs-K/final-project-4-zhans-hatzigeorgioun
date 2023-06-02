@@ -119,7 +119,7 @@ for p in range(len(dec)):
     #print(table[answerXj][answerYi])
     final += table[answerXi][answerYj]
     final += table[answerYi][answerXj]
-print("Your Decrypted message: " + final)
+print("Decrypted Message: " + final)
 
 #print out the key to show whats happening
 #print(encryptedT1)
