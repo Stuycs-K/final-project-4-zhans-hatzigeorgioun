@@ -52,6 +52,7 @@ Encryption better demo print, logic is still in progress, some parts of logic ha
 ### June 1, 2023
 Fixed encrypt code, tested it. Encrypt code works!
 Made it so encrypt.py can take in txt inputs as well as user inputs. Code now strips punctuation and spaces before encrypting. Tested and works!
+Started work on presentation.md, finished covering encryption algorithm. 
 
 ## References and Resources
 
