@@ -51,12 +51,6 @@ else:
     print("Invalid input")
     sys.exit(1)
 
-print(msg)
-print(key1)
-print(key2)
-
-
-
 def splitter (msg):
     tbEncrypt = msg.replace(" ", "").upper()
     if(len(tbEncrypt)%2 != 0):
