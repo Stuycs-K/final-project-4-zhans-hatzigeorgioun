@@ -75,7 +75,7 @@ Made it so encrypt.py can take in txt inputs as well as user inputs. Code now st
 Started work on PRESENTATION.md, finished covering encryption algorithm. 
 
 ### June 5, 2023
-Finished README.md and PRESENTATION.md. Formatted encrypt for presentation/demo purposes, displays locations of the 4 key squares
+Finished README.md and PRESENTATION.md. Formatted encrypt for presentation/demo purposes, displays locations of the 4 key squares. Reviewed and finalized TryHackMe homework. Submitted it for public release
 
 ## References and Resources
 
