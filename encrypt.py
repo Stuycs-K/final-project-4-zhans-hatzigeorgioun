@@ -104,6 +104,30 @@ def find_position(square, char):
             if square[i][j] == char:
                 return i, j
 
+#Placement of the 4 key squares
+sequence = ""
+for i in range(5):
+    for j in range(10):
+        if j>4:
+            k=j-5
+            sequence = sequence + str(upper_right[i][k])
+        else:
+            sequence = sequence + str(upper_left[i][j])
+for i in range(5):
+    for j in range(10):
+        if j>4:
+            k=j-5
+            sequence = sequence + str(lower_right[i][k])
+        else:
+            sequence = sequence + str(lower_left[i][j])
+sequence_list = list(sequence)
+encrypt_square = []
+for i in range(10):
+    lists = []
+    for j in range(10):
+        lists.append(sequence_list[i*10+j])
+    encrypt_square.append(lists)
+
 
 print("Upper Left Key")
 for row in upper_left:
@@ -122,6 +146,11 @@ print()
 
 print("Lower Right Key")
 for row in lower_right:
+    print(row)
+print()
+
+print("Placement of the 4 Key Squares")
+for row in encrypt_square:
     print(row)
 print()
 

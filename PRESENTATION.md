@@ -42,4 +42,4 @@ Now, you may have noticed that `ATTACKATDAWN` pairs up evenly since it contains 
 
 You may also have noticed that our default keys don't contain the letter `J` and might wonder how we would deal with a word that contains that letter such as `JACK`. In our default keys, `I` and `J` are combined to form the 25 letter matrix. Thus, when our code detects that the message contains the letter `J`, it would substitute it with an `I` instead and encode it. When decoding, the result would be `IACK`, but you can infer that the plaintext message is `JACK` through substitution.
 
-The Four-Square Cipher is similar to the Playfair Cipher.
+The Four-Square Cipher is similar to the Playfair Cipher. The playfair cipher utilizes a singular 5x5 matrix. The encryption and decryption algorithm for both cipher are the same. They both encode in pairs and form squares using the key. The only difference is the size of the matrix and the number of keys needed for the cipher.
