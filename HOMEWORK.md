@@ -1,3 +1,3 @@
-# Four-Square Cipher TryHackMe
+# Four-Square Cipher TryHackMe Homework
 
-[Do the TryHackMe Room](https://tryhackme.com/room/foursquarecipher2y)
+[Complete our TryHackMe Room](tryhackme.com/jr/foursquarecipherzh)

@@ -78,7 +78,7 @@ Started work on PRESENTATION.md, finished covering encryption algorithm.
 Finished README.md and PRESENTATION.md. Formatted encrypt for presentation/demo purposes, displays locations of the 4 key squares. Reviewed and finalized TryHackMe homework. Submitted it for public release
 
 ### June 6, 2023
-Update to PRESENTATION.md about cracking cipher and keys
+Update to PRESENTATION.md about cracking cipher and keys. Update to HOMEWORK.md for updated TryHackMe link.
 
 ## References and Resources
 
