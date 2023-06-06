@@ -72,10 +72,13 @@ Encryption better demo print, logic is still in progress, some parts of logic ha
 ### June 1, 2023
 Fixed encrypt code, tested it. Encrypt code works!
 Made it so encrypt.py can take in txt inputs as well as user inputs. Code now strips punctuation and spaces before encrypting. Tested and works!
-Started work on PRESENTATION.md, finished covering encryption algorithm. 
+Started work on PRESENTATION.md, finished covering encryption algorithm.
 
 ### June 5, 2023
 Finished README.md and PRESENTATION.md. Formatted encrypt for presentation/demo purposes, displays locations of the 4 key squares. Reviewed and finalized TryHackMe homework. Submitted it for public release
+
+### June 6, 2023
+Update to PRESENTATION.md about cracking cipher and keys
 
 ## References and Resources
 
